@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Registro|Posada Villa Montaña</title>
+    <link rel="stylesheet" href="css/style registro.css">
+  </head>
+  <body>
+    <h2>Posada Villa Montaña</h2>
+    <div class="card">
+        <div class="container-card">
+          <h1>Bienvenido</h1>
+          <p>Ingrese sus datos</p>
+          <form id="formulario">
+            <div class="inputs">
+
+
+              <div class="formulario__grupo" id="grupo__nombre">
+                <div class="formulario__grupo-input">
+              <input type="text" id="nombre" class="formulario__input" name="nombre" placeholder="Nombre y Apellido">
+              <p class="formulario__input-error">El usuario tiene que ser de 4 a 16 dígitos y solo puede contener numeros, letras y guion bajo.</p>
+            </div>
+          </div>
+
+
+
+
+              <!-- Grupo: Teléfono -->
+			<div class="formulario__grupo" id="grupo__telefono">
+				<div class="formulario__grupo-input">
+					<input type="text" class="formulario__input" name="telefono" id="telefono" placeholder="Telefono">
+				</div>
+				<p class="formulario__input-error">El telefono solo puede contener numeros y el maximo son 14 dígitos.</p>
+			</div>
+
+
+
+
+
+                   <!-- Grupo: Correo Electronico -->
+			<div class="formulario__grupo" id="grupo__correo">
+				<div class="formulario__grupo-input">
+					<input type="email" class="formulario__input" name="correo" id="correo" placeholder="Correo">
+				</div>
+				<p class="formulario__input-error">El correo solo puede contener letras, numeros, puntos, guiones y guion bajo.</p>
+			</div>
+             
+             
+             
+             
+             
+        <!-- Grupo: Contraseña2 -->
+			<div class="formulario__grupo" id="grupo__password">
+				<div class="formulario__grupo-input">
+					<input type="password" class="formulario__input" name="password" id="password" placeholder="contrasenia">
+				</div>
+				<p class="formulario__input-error">La contraseña tiene que ser de 4 a 12 dígitos.</p>
+			</div>
+
+
+
+               <!-- Grupo: Contraseña 3 -->
+			<div class="formulario__grupo" id="grupo__password2">
+				<div class="formulario__grupo-input">
+					<input type="password" class="formulario__input" name="password2" id="password2" placeholder="repita la contrasenia">
+				</div>
+				<p class="formulario__input-error">Ambas contraseñas deben ser iguales.</p>
+			</div>
+
+
+
+            </div>
+            <div><button type="button" class="btn-a" onclick="register()">registrarse</button></div>
+          </form>
+        </div>
+    </div>
+
+    <script src="Javascript/register.js"></script>
+  </body>
+</html>

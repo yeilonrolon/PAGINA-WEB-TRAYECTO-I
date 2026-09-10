@@ -1,0 +1,406 @@
+body {
+  font-family: Roboto, "Noto Sans";
+  margin: 0px;
+  width: 100%;
+  height: 100vh;
+}
+
+header {
+  background-color: rgb(255, 255, 255);
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 2px 4px;
+  position: fixed;
+  top: 0px;
+  left: 0px;
+  right: 0px;
+  z-index: 9999;
+}
+
+nav {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 50px;
+}
+
+nav ul {
+  display: flex;
+  justify-content: space-between;
+  list-style: none;
+  margin: 0px;
+  padding: 0px;
+}
+
+nav li {
+  margin: 0px 30px 0px 0px;
+  padding: 10px;
+  transition: all 0.3s ease 0s;
+}
+
+nav li a {
+  background: rgb(255, 255, 255);
+  font-size: 18px;
+  font-weight: bold;
+  color: rgb(51, 51, 51);
+  text-decoration: none;
+  font-style: italic;
+}
+
+ul {
+  display: flex;
+  list-style-type: none;
+  margin: 0px;
+  padding: 0px;
+}
+
+li {
+  margin: 0px 20px;
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  color: rgb(51, 51, 51);
+}
+
+a:hover {
+  color: rgb(213, 151, 206);
+  padding: 5px;
+  border-radius: 4px;
+}
+.logo{
+  width: 79px;
+  height: auto;
+}
+     .habitaciones {
+      background: #f1ebebf8;
+      }
+
+      .servicios-top{
+        background-color: rgb(247, 247, 247);
+        box-shadow: rgba(0, 0, 0, 0.2) 0px 1px 10px;
+        padding: 80px 20px;
+        text-align: center;
+        height: 7%;
+        overflow: hidden;
+      }
+      .servicios h1 {
+        font-size: 3rem;
+        margin-bottom: -20px;
+        margin-top: 3px;
+        margin: 0;
+      }
+      
+     .servicios-top p {
+      font-size: 1.2rem;
+       margin-bottom: 11px;
+      }
+
+      .servicios{
+        display: grid;
+        
+        margin: 5px;
+        padding: 2px;
+      }
+      .servicios img{
+        width: 350px;
+        height: 250px;
+        border-radius: 10px;
+      }
+      .btn {
+        margin-left: 38%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 20%;
+        background-color: #fff;
+        color: #333;
+        border: none;
+        box-shadow: 0px 8px 5px rgb(0 0 0 / 10%);
+        padding: 12px ;
+        border-radius: 5px;
+        font-size: 0.9rem;
+        text-transform: uppercase;
+        transition: all 0.3s ease;
+      }
+      
+      .btn:hover {
+        padding:10px;
+        background-color: #D597CE;
+        border: 1px solid #f5bbd1;
+        color: #fff;
+        border-radius: 5px;
+      }
+
+
+     .contacto {
+        background-color: #f7f7f7;
+        padding: 80px 20px;
+        text-align: center;
+      }
+      
+      .contacto h2 {
+        font-size: 3rem;
+        margin-bottom: 20px;
+      }
+      
+      .contacto p {
+        font-size: 1.2rem;
+        margin-bottom: 40px;
+      }
+    
+      .contacto {
+        background-color: #f7f7f7;
+        padding: 80px 20px;
+        text-align: center;
+      }
+      
+      .carrousel {
+        margin-left: 20%;
+        width: 50%;
+        padding: 2em;
+        transition: all 0.4s ease;
+        border-radius: 1em;
+        box-shadow: 1em 1em 2em var(--sombra-ppal), -1em -1em 2em var(--sombra-sec), inset 0 0 0 transparent, inset 0 0 0 transparent;
+        overflow: hidden;
+      }
+      
+      .carrousel .grande {
+        width: 300%;
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+        transition: all 0.4s ease;
+        border-radius: 1em;
+        box-shadow: 1em 1em 2em var(--sombra-ppal), -1em -1em 2em var(--sombra-sec), inset 0 0 0 transparent, inset 0 0 0 transparent;
+     
+        transition: all 0.5s ease;
+        transform: translateX(0%);
+      }
+      
+      .carrousel .img {
+        margin: auto;
+        transition: all 0.4s ease;
+        border-radius: 1em;
+        box-shadow: 1em 1em 2em var(--sombra-ppal), -1em -1em 2em var(--sombra-sec), inset 0 0 0 transparent, inset 0 0 0 transparent;
+      }
+      
+      .carrousel .puntos {
+        width: 100%;
+        margin: 0.5em 0 0;
+        padding: 0.4em;
+        display: flex;
+        flex-flow: row nowrap;
+        justify-content: center;
+        align-items: center;
+      }
+      
+      .carrousel .punto {
+        width: 1.5em;
+        height: 1.5em;
+        margin: 1em 1em 0;
+        color: var(--negro);
+        transition: all 0.4s ease;
+        border-radius: 1em;
+        background-color: #D597CE;
+        box-shadow: 0.6em 0.6em 1.2em var(--sombra-ppal), -0.6em -0.6em 1.2em var(--sombra-sec), inset 0 0 0 transparent, inset 0 0 0 transparent;
+      }
+      
+      .carrousel .punto.activo {
+        background-color: rgb(16, 33, 39);
+      }
+
+      .carrousel2 {
+        margin-left: 20%;
+        width: 50%;
+        padding: 2em;
+        transition: all 0.4s ease;
+        border-radius: 1em;
+        box-shadow: 1em 1em 2em var(--sombra-ppal), -1em -1em 2em var(--sombra-sec), inset 0 0 0 transparent, inset 0 0 0 transparent;
+        overflow: hidden;
+      }
+      
+      .carrousel2 .grande2 {
+        width: 300%;
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+        transition: all 0.4s ease;
+        border-radius: 1em;
+        box-shadow: 1em 1em 2em var(--sombra-ppal), -1em -1em 2em var(--sombra-sec), inset 0 0 0 transparent, inset 0 0 0 transparent;
+     
+        transition: all 0.5s ease;
+        transform: translateX(0%);
+      }
+      
+      .carrousel2 .img {
+        margin: auto;
+        transition: all 0.4s ease;
+        border-radius: 1em;
+        box-shadow: 1em 1em 2em var(--sombra-ppal), -1em -1em 2em var(--sombra-sec), inset 0 0 0 transparent, inset 0 0 0 transparent;
+      }
+      
+      .carrousel2 .puntos2 {
+        width: 100%;
+        margin: 0.5em 0 0;
+        padding: 0.4em;
+        display: flex;
+        flex-flow: row nowrap;
+        justify-content: center;
+        align-items: center;
+      }
+      
+      .carrousel2 .punto2 {
+        width: 1.5em;
+        height: 1.5em;
+        margin: 1em 1em 0;
+        color: var(--negro);
+        transition: all 0.4s ease;
+        border-radius: 1em;
+        background-color: #D597CE;
+        box-shadow: 0.6em 0.6em 1.2em var(--sombra-ppal), -0.6em -0.6em 1.2em var(--sombra-sec), inset 0 0 0 transparent, inset 0 0 0 transparent;
+      }
+      
+      .carrousel2 .punto2.activo2 {
+        background-color: rgb(16, 33, 39);
+      }
+
+      .carrousel3 {
+        margin-left: 20%;
+        width: 50%;
+        padding: 2em;
+        transition: all 0.4s ease;
+        border-radius: 1em;
+        box-shadow: 1em 1em 2em var(--sombra-ppal), -1em -1em 2em var(--sombra-sec), inset 0 0 0 transparent, inset 0 0 0 transparent;
+        overflow: hidden;
+      }
+      
+      .carrousel3 .grande3 {
+        width: 300%;
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+        transition: all 0.4s ease;
+        border-radius: 1em;
+        box-shadow: 1em 1em 2em var(--sombra-ppal), -1em -1em 2em var(--sombra-sec), inset 0 0 0 transparent, inset 0 0 0 transparent;
+     
+        transition: all 0.5s ease;
+        transform: translateX(0%);
+      }
+      
+      .carrousel3 .img {
+        margin: auto;
+        transition: all 0.4s ease;
+        border-radius: 1em;
+        box-shadow: 1em 1em 2em var(--sombra-ppal), -1em -1em 2em var(--sombra-sec), inset 0 0 0 transparent, inset 0 0 0 transparent;
+      }
+      
+      .carrousel3 .puntos3 {
+        width: 100%;
+        margin: 0.5em 0 0;
+        padding: 0.4em;
+        display: flex;
+        flex-flow: row nowrap;
+        justify-content: center;
+        align-items: center;
+      }
+      
+      .carrousel3 .punto3 {
+        width: 1.5em;
+        height: 1.5em;
+        margin: 1em 1em 0;
+        color: var(--negro);
+        transition: all 0.4s ease;
+        border-radius: 1em;
+        background-color: #D597CE;
+        box-shadow: 0.6em 0.6em 1.2em var(--sombra-ppal), -0.6em -0.6em 1.2em var(--sombra-sec), inset 0 0 0 transparent, inset 0 0 0 transparent;
+      }
+      
+      .carrousel3 .punto3.activo3 {
+        background-color: rgb(16, 33, 39);
+      }
+      .carrousel4 {
+        margin-left: 20%;
+        width: 50%;
+        padding: 2em;
+        transition: all 0.4s ease;
+        border-radius: 1em;
+        box-shadow: 1em 1em 2em var(--sombra-ppal), -1em -1em 2em var(--sombra-sec), inset 0 0 0 transparent, inset 0 0 0 transparent;
+        overflow: hidden;
+      }
+      
+      .carrousel4 .grande4 {
+        width: 300%;
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+        transition: all 0.4s ease;
+        border-radius: 1em;
+        box-shadow: 1em 1em 2em var(--sombra-ppal), -1em -1em 2em var(--sombra-sec), inset 0 0 0 transparent, inset 0 0 0 transparent;
+     
+        transition: all 0.5s ease;
+        transform: translateX(0%);
+      }
+      
+      .carrousel4 .img {
+        margin: auto;
+        transition: all 0.4s ease;
+        border-radius: 1em;
+        box-shadow: 1em 1em 2em var(--sombra-ppal), -1em -1em 2em var(--sombra-sec), inset 0 0 0 transparent, inset 0 0 0 transparent;
+      }
+      
+      .carrousel4 .puntos4 {
+        width: 100%;
+        margin: 0.5em 0 0;
+        padding: 0.4em;
+        display: flex;
+        flex-flow: row nowrap;
+        justify-content: center;
+        align-items: center;
+      }
+      
+      .carrousel4 .punto4 {
+        width: 1.5em;
+        height: 1.5em;
+        margin: 1em 1em 0;
+        color: var(--negro);
+        transition: all 0.4s ease;
+        border-radius: 1em;
+        background-color: #D597CE;
+        box-shadow: 0.6em 0.6em 1.2em var(--sombra-ppal), -0.6em -0.6em 1.2em var(--sombra-sec), inset 0 0 0 transparent, inset 0 0 0 transparent;
+      }
+      
+      .carrousel4 .punto4.activo4 {
+        background-color: rgb(16, 33, 39);
+      }
+
+      .cont1{
+        
+        width: 100%;
+        height: auto;
+        align-items: center;
+        text-align: center;
+      
+      }
+      .card{
+       overflow: hidden;
+       box-shadow: rgba(0, 0, 0, 0.2) 0px 1px 10px;
+       cursor: default;
+       margin: 2%;
+       padding: 20px;
+       width: 60%;
+       margin-left: 20%;
+      }
+   
+      footer {
+        background: rgb(241, 191, 210);
+        color: rgb(255, 255, 255);
+        text-align: center;
+        padding: 20px;
+      }
+      
+      footer p {
+        font-size: 1.2rem;
+        margin: 0px;
+        height:auto;
+      }
+      

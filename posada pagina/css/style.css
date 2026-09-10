@@ -1,0 +1,298 @@
+/* Estilos generales */
+
+body {
+  font-family: "Roboto", "Noto Sans";
+    margin: 0;
+  }
+  
+  /* Estilos para el encabezado */
+  
+  header {
+    background-color: #fff;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 9999;
+  }
+  
+  nav {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 50px;
+  }
+
+  nav ul {
+    display: flex;
+    justify-content: space-between;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+
+  nav li {
+    margin: 0 30px 0 0;
+    padding: 10px;
+    transition: all 0.3s ease;
+  }
+ 
+
+  nav li a {
+    background: #fff;
+    font-size: 18px;
+    font-weight: bold;
+    color: #333;
+    text-decoration: none;
+    font-style: italic;
+  }
+
+
+  ul {
+    display: flex;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+  }
+  
+  li {
+    margin: 0 20px;
+    list-style: none;
+  }
+  
+  a {
+    text-decoration: none;
+    color: #333;
+  }
+  a:hover{
+    color: #D597CE;
+    padding: 5px;
+    border-radius: 4px;
+  }
+  .logo{
+    width: 79px;
+    height: auto;
+}
+  
+  
+  /* Estilos para la sección del héroe */
+  
+  .hero {
+    background: linear-gradient(#39375B, #745C97,rgb(213, 151, 206));
+     background-image:  url(../img/fondo-main.jpg);
+    background-position: center;
+    background-size: 100%;
+    opacity: 0.88;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: #fff;
+  }
+  
+  .hero h1 {
+    font-size: 4rem;
+    margin-bottom: 20px;
+  }
+  
+  .hero p {
+    font-size: 1.5rem;
+    margin-bottom: 40px;
+  }
+  
+  .btn {
+    background-color: #fff;
+    box-shadow: 0 8px 8px rgba(0,0,0,0.2);
+    color: #333;
+    border: none;
+    padding: 10px 20px;
+   border-radius: 5px;
+    font-size: 1.2rem;
+    text-transform: uppercase;
+    transition: all 0.3s ease;
+  }
+  
+  .btn:hover {
+    background-color: #F5B0CB;
+    border-radius: 5px;
+    border: 2px solid #cfcfcf;
+    color: #fff;
+  }
+  
+  /* Estilos para la sección de habitaciones */
+  
+  .habitaciones {
+    background-color: #f7f7f7;
+    padding: 80px 20px;
+    text-align: center;
+  }
+  
+  .habitaciones h2 {
+    font-size: 3rem;
+    margin-bottom: 20px;
+  }
+  
+  .habitaciones p {
+    font-size: 1.2rem;
+    margin-bottom: 40px;
+  }
+  
+  /* Estilos para la sección de servicios */
+  
+  .servicios {
+    background-color: #fff;
+    padding: 80px 20px;
+    text-align: center;
+  }
+  
+  .servicios h2 {
+    font-size: 3rem;
+    margin-bottom: 20px;
+  }
+  
+  .servicios p {
+    font-size: 1.2rem;
+    margin-bottom: 40px;
+  }
+  /* Estilos para la secciôn de contacto */
+  .contacto {
+    background-color: #f7f7f7;
+    padding: 80px 20px;
+    text-align: center;
+  }
+  
+  .contacto h2 {
+    font-size: 3rem;
+    margin-bottom: 20px;
+  }
+  
+  .contacto p {
+    font-size: 1.2rem;
+    margin-bottom: 40px;
+  }
+  /* Estilos para la sección de testimonios */
+  
+  .contacto {
+    background-color: #f7f7f7;
+    padding: 80px 20px;
+    text-align: center;
+  }
+  
+  .testimonios h2 {
+    font-size: 3rem;
+    margin-bottom: 40px;
+  }
+  
+  .testimonio {
+    max-width:800px;
+    margin: 0 auto 40px;
+    text-align: center;
+  }
+  
+  .testimonio p {
+    font-size: 1.5rem;
+    margin-bottom: 20px;
+  }
+  
+  .testimonio .autor {
+    font-style: italic;
+    font-size: 1.2rem;
+  }
+
+  /* GPS */
+  .gps{
+    padding: 10px;
+    margin: 12px;
+    width: 55%;
+    height: 56%;
+    margin-left: 22%;
+    border-radius: 5%;
+}
+
+.title-gps{
+  font-size: 2.2rem;
+    margin: 2%;
+    text-align: center;
+}
+  
+  /* Estilos para el pie de página */
+  footer {
+    background: #f1bfd2;
+    color: #fff;
+    text-align: center;
+    padding: 20px;
+  }
+  
+  footer p {
+    font-size: 1.2rem;
+    margin: 0;
+  }
+
+  /*MEDIA QUERY*/
+
+  @media screen and (max-width: 992px) {
+    header{
+      height: 5%;
+    }
+    .hero{
+      background-size: 300%;
+    }
+    .hero p{
+      font-size: 40px;
+    }
+    .btn{
+      padding: 18px;
+      font-size: 1.9rem;
+    }
+    nav {
+      margin-top: 16px;
+    }
+    nav ul li a{
+      font-size: 30px;
+    }
+    .h1-top{
+      margin-left: 5%;
+    }
+  }
+  @media screen and (max-width: 991px){
+    header{
+      height: 10%;
+    }
+    nav {
+      margin-top: 16px;
+    }
+    nav ul li a{
+      font-size: 20px;
+    }
+    .btn{
+      padding: 9px;
+      font-size: 1.2rem;
+    }
+  }
+  
+  @medias screen and (max-width: 768px){
+    header{
+      height: 9%;
+    }
+    nav {
+      margin-top: 16px;
+    }
+    nav ul li a{
+      font-size: 20px;
+    }
+    .btn{
+      padding: 9px;
+      font-size: 1.2rem;
+    }
+  }
+  .los img{
+    width: 250px;
+    height: 200px;
+    margin: 3%;
+    align-items: center;
+    border-radius: 10px;
+  }
